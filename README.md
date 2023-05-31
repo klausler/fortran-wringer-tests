@@ -24,5 +24,3 @@ their most recent releases before doing anything with this data.
 Please submit updated results, comments about standard conformance,
 and more weird Fortran usage tests as pull requests to this
 repository.
-
-"Fortran isn't dead, but it sure doesn't smell good."
