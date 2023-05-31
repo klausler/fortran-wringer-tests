@@ -1,6 +1,9 @@
 # fortran-wringer-tests
 
-A collection of non-portable Fortran usage, standard-conformant or otherwise.
+"Fortran isn't dead, it just smells funny."
+
+This is a collection of non-portable Fortran usage, standard-conformant
+and otherwise.
 
 This directory holds a collection of some Fortran test programs that
 I have accumulated during the development of the f18 Fortran compiler
@@ -21,3 +24,5 @@ their most recent releases before doing anything with this data.
 Please submit updated results, comments about standard conformance,
 and more weird Fortran usage tests as pull requests to this
 repository.
+
+"Fortran isn't dead, but it sure doesn't smell good."
