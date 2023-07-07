@@ -6,9 +6,9 @@
 ! since F'2003.  The conditions in which a (re)allocated LHS variable
 ! acquires the bounds of the RHS are also clear, but not implemented
 ! correctly in all compilers.
-! GNU, NAG, f18: 2, 2, 1, 1, 3, 1, 4, 4
-! Intel, XLF: 2, 2, 2, 1, 3, 1, 4, 4
-! NVF: 2, 2, 2, 2, 3, 2, 4, 4
+! GNU, NAG, f18: 2, 2, 1, 1, 1, 3, 1, 4, 4
+! Intel, XLF:    2, 2, 2, 1, 1, 3, 1, 4, 4
+! NVF:           2, 2, 2, 2, 1, 3, 1, 4, 4
 program main
   real, allocatable :: a(:), b(:)
   allocate(b(2:3))
@@ -20,6 +20,9 @@ program main
   print *, lbound(a)
   deallocate(a)
   a = b + 0. ! should allocate with default bounds
+  print *, lbound(a)
+  deallocate(a)
+  a = b(:) ! should allocate with default bounds
   print *, lbound(a)
   deallocate(b)
   allocate(b(3:4))
