@@ -1,5 +1,5 @@
 ! More finalization discrepancies.
-! GNU, Intel:: child final2a 21 22 23 24;
+! GNU, Intel: child final2a 21 22 23 24;
 !      component final2e 31; 41-44; 32; 45-48; 33; 49-52; 34; 53-56;
 !      parent final1a 11-14
 ! NVF: component final3a 41-44; 49-52; 45-48; 53-56;
