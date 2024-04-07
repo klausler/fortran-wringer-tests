@@ -69,7 +69,7 @@ compiler developers don't always implement it correctly.
 * Avoid commas in numeric input with explicit formats.
 
 * Avoid defining procedures, dummy procedures, or procedure pointers using
-  the names elemental intrinsics as interfaces (`procedure(acos) p`)
+  the names of elemental intrinsics as interfaces (`procedure(acos) p`)
 
 * Don't assume that an allocatable function result is an allocatable
   after the function returns -- it's not, but some compilers allow
@@ -96,7 +96,7 @@ compiler developers don't always implement it correctly.
   specific procedures in a generic interface; it's unambiguous,
   and sometimes accidental when generic interfaces are merged
   via `USE` association.
-  But it's not conformant, and some compilers refuse it.
+  But it's not conformant, and some compilers reject this usage.
 
 * Don't use a module's name for anything else in the module.
 
@@ -281,7 +281,7 @@ resolved by multiple compilers to names in the enclosing scope.
 * If `a` and `b` are allocatable arrays, and `a` is not allocated
   or has a distinct shape from `b`, then `a = b` (re)allocates
   `a` with the same shape and lower bounds as `b`.
-  At least it should do so, but many compilers give 'a' lower bounds of 1.
+  At least it should do so, but many compilers give `a` lower bounds of 1.
 
 ### Finalization
 
