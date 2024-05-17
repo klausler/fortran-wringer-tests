@@ -53,9 +53,9 @@ Using `IMPLICIT NONE` avoids many of the portability pitfalls.
 Even where the standard is fairly clear and free of contradiction,
 compiler developers don't always implement it correctly.
 
-* Avoid defining generics in extended derived type with specific
+* Avoid defining generics in extended derived types with specific
   procedures that aren't distinguishable from specific procedures
-  in a base type's generic.
+  in a base type's corresponding generic.
 
 * Don't use the same name for a generic interface and a subprogram,
   especially when the subprogram is not a specific procedure of the
@@ -312,7 +312,7 @@ defined assignment are especially non-portable.
   two repeated quotation marks that are necessary to encode an instance
   of a quotation mark in the character value.
 * The standard allows the character literal file name on an `INCLUDE`
-  line to have a character kind suffix.  Only one compiler supports it.
+  line to have a character kind prefix.  Only one compiler supports it.
 * Don't `INQUIRE` on a closed unit number or on a directory.
 * Don't `INQUIRE(POSITION=)` on a unit after positioning it with
   `REWIND` or `BACKSPACE`; no two compilers agree on all cases.
