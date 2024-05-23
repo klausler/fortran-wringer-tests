@@ -1,8 +1,5 @@
 ! Can a procedure have the same name as a generic in a scope if it is not
 ! a specific procedure of the generic?
-! GNU, NVF: yes
-! f18: yes, with warning
-! Intel, NAG, XLF: no
 module m1
   interface foo
     module procedure noargs

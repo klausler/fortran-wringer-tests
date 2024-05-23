@@ -1,6 +1,5 @@
 ! Do Fortran 2003 allocatable assignment semantics with (re)allocation work
 ! in the context of a WHERE statement?
-! GNU, NVF, NAG crash; XLF bad results; Intel & f18 work
 program main
   integer, allocatable :: a(:), b(:)
   a = [(j,j=1,10)]

@@ -1,8 +1,5 @@
 ! When two generics, each with homonymous specifics, are use-associated
 ! into a scope, is an error reported?
-! GNU, NVF: yes, but it's due to failing to catch p1 ambiguity
-! Intel: weird undefined external linker messages about p1
-! NAG, XLF, f18: yes
 module m1
   interface foo
     module procedure foo

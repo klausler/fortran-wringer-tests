@@ -1,8 +1,4 @@
 ! What happens with unassociated procedure pointer dummy arguments?
-! GNU: error passing explicit NULL()
-! Intel, NVF, XLF: hi, p is null, p is null
-! NAG: crashes compiler
-! f18: no error, NYI in code generation
 module m
   abstract interface
     subroutine noargs

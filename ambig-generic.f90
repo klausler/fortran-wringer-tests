@@ -1,8 +1,6 @@
 ! If a derived type and an extension each have type-bound generic interface,
 ! and the extended type has a specific procedure that is ambiguous with
 ! a specific procedure in the base type, what happens?
-! GNU, Intel, NAG, XLF: error
-! NVF, f18: override
 module m
   type base
    contains

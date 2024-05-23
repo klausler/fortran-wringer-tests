@@ -1,7 +1,4 @@
 ! Are %re and %im complex parts really variables?
-! GNU, NAG, XLF, f18: yes
-! Intel: no, they're expressions
-! NVF: no, no error, results wrong (unchanged (1.,2.))
 program main
   complex z
   z = (1.,2.)

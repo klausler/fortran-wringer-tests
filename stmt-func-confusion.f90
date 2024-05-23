@@ -1,10 +1,6 @@
 ! There's a syntactic ambiguity between a statement function definition,
 ! an assignment to an element of a whole array, and an assignment to the
 ! target of a pointer-valued function.
-! GNU: prints 0.
-! Intel: prints 1,
-! NVF, NAG, XLF: syntax errors
-! f18: assignment to target of pointer-valued function not yet implemented in lowering
 module m
   real, target :: x = 1.
  contains

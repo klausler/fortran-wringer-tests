@@ -1,6 +1,3 @@
-! GNU, NAG: bogus compilation errors
-! Intel, NVF: incorrect results (no temp used?)
-! XLF: works correctly
 module m
   type t
     integer m

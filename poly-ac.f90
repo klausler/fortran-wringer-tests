@@ -1,9 +1,5 @@
 ! What is the type of an array constructor containing polymorphic entities
 ! of the same dynamic type?
-! XLF: t2 1 2 3 4
-! GNU, NVF, NAG, f18: t 1 3
-! ifort: t 1 32765
-! ifx: t 1 2
 module m
   type t
     integer n

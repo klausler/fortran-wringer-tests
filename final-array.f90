@@ -1,7 +1,4 @@
 ! Elemental vs array finalizers
-! GNU: child final2a 21 22 23 24, parent final1a 11 12 13 14
-! Intel, NVF, XLF: child final2a 21 22 23 24, parent final1e 11; 12; 13; 14
-! NAG, f18: child final2a 12 22 23 24, parent final1a 11 21 12 22
 module m
   type :: parent
     integer :: j

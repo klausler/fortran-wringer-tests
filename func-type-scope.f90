@@ -1,7 +1,4 @@
 ! (Possible duplicate) Which TYPE(t) does function foo have?
-! GNU, XLF: Bogus errors about "subr2 must be a module procedure or external procedure with explicit interface"
-! NVF: "too many arguments specified for subr1"
-! Intel, NAG, f18: type of function result is from function scope
 module m
   type :: t
    contains

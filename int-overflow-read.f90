@@ -1,8 +1,4 @@
 ! What happens on overflow during internal input?
-! GNU, Intel, f18: errors for int, real, boz
-! NVF: error for boz
-! NAG: error for int & real
-! XLF: error for int & boz
 program main
   character(20) :: int_input = '777777777777777'
   character(20) :: real_input = '1.e9999999'

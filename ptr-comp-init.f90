@@ -1,8 +1,4 @@
 ! Can pointer components have default initialization?
-! GNU: compiler sigsegv
-! Intel, f18: works, good output
-! NVF, XLF: syntax error
-! NAG: compilation errors, "XS is not permitted in a constant expression"
 module m1
   real, target :: xs(3,3) = reshape([(j, j=1,9)],[3,3])
   real, target :: pi = 3.14159

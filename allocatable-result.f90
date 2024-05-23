@@ -1,7 +1,5 @@
 ! Error or extension?  Can an ALLOCATABLE function result be associated
 ! with an ALLOCATABLE dummy argument?
-! NAG, f18: no
-! GNU, Intel, NVF, XLF: allowed
 module m
  contains
   function allocFunc(n)

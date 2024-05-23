@@ -1,7 +1,4 @@
 ! What happens when an unlimited polymorphic is the mold of TRANSFER?
-! GNU, Intel, NVF: error, "selector shall be polymorphic"
-! NAG, XLF: compiles, then sigsegv at runtime
-! f18: compiler crash
 module m
  contains
   subroutine foo(mold)

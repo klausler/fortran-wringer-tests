@@ -1,9 +1,4 @@
 ! Can a dummy procedure be used in a defined I/O generic interface?
-! XLF, f18: work
-! GNU: "print *, x" error due to polymorphism and no defined I/O
-! Intel: error on "procedure p"
-! NVF: compiles, but handles print as if monomorphic intrinsic I/O
-! NAG: C compilation error about undeclared "p_"
 module m
   type t
     integer n

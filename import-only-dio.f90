@@ -1,9 +1,5 @@
 ! Can IMPORT,ONLY be used to disable a non-TBP defined I/O generic
 ! interface?
-f18: correct
-GNU, NAG: bogus "IMPORT only allowed in interfaces" errors
-Intel: defined I/O called for 'test1 block' and 'test2', so ONLY didn't work
-NVF, XLF: syntax error on "IMPORT,ONLY"
 module m
   type t
     integer n

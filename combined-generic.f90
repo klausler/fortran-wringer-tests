@@ -2,8 +2,6 @@
 ! can't be distinguished by their interfaces, is it still an error if those
 ! specific procedures are never needed to resolve a reference to the generic
 ! procedure?
-! GNU, Intel, XLF: yes
-! NAG, NVF, f18: no
 module m1
   interface foo
     procedure s0, s1

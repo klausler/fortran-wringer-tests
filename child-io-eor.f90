@@ -1,15 +1,4 @@
 ! End-of-record conditions during child I/O.
-! Behaviors vary wildly and no two compilers do the same thing.
-! (I believe f18 is correct per the Fortran standard.)
-! f18: x 123 0 234 0 iostat -2 which 4 iomsg End of record during non-advancing input
-! GNU: x         123           0           0           0 iostat          -1 which           2 iomsg End of file
-! Intel: x         123           0           0           0 iostat          -1 which
-!           2 iomsg end-of-file during read, unit -5, file Internal Formatted Read
-! NVF: x            0            0            0            0 iostat          212
-!           which            1 iomsg invalid unit number
-! NAG: x 123 234 345 0 iostat -2 which 4 iomsg End of record on internal file
-! XLF: x 123 234 456 0 iostat -4 which 4 iomsg "child-io-eor.f90", line 50: 1525-031 The non-advancing READ...
-
 module m
   type t
     integer j(4)

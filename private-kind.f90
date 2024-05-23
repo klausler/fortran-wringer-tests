@@ -1,6 +1,4 @@
 ! What happens when PRIVATE KIND appears in a module with no other declaration?
-! GNU, Intel, XLF, f18: no error, prints 4
-! NVF, NAG: compilation error
 module m
   private kind
  contains

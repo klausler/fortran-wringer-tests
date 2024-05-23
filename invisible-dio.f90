@@ -1,8 +1,5 @@
 ! When a non-TBP defined I/O generic is not in the scope of a call,
 ! is it used?
-! GNU, NAG, XLF, f18: correct
-! Intel: test1 fails
-! NVF: test2 fails
 module m1
   type t
     integer n

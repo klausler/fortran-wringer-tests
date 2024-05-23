@@ -1,6 +1,4 @@
 ! Does NAMELIST output respect USE renaming?
-! GNU, NVF, NAG: no
-! Intel, XLF, f18: yes
 module m
   integer :: name_in_module = 123
 end module

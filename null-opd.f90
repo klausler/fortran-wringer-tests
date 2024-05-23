@@ -1,8 +1,4 @@
 ! NULL() as operand to defined operator
-! GNU, XLF, f18: ok, print F
-! Intel: error, "invalid context for NULL(...)"
-! NVF: compiler crash
-! NAG: error, "MOLD argument ... is required"
 module m
   interface operator(+)
     procedure f

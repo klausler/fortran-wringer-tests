@@ -1,8 +1,4 @@
 ! Finalization vs defined assignment
-! GNU: 1, 0=3, after 3, 6, 5
-! Intel, NAG, XLF: 1, 2=3, 4, after 3, 5, 6
-! NVF: 0=3, 4, after 3, 5, 6
-! f18: 1, 2=3, 4, after 3, 6, 5
 module m1
   type :: t1
     integer :: n

@@ -1,18 +1,16 @@
 ! What's the result of MAX/MIN when the operands are
 ! both zero and at least one of them is an IEEE -0.0?
-! GNU, Intel: the first operand
-! NVF: always -0.0
-! NAG, f18: the second operand
-! XLF: the second operand for MAX, the first for MIN
 program main
   real :: x = real(z'80000000', kind(x))
   real :: y = real(z'00000000', kind(y))
   call sub('max', x, x, max(x, x))
   call sub('max', x, y, max(x, y))
   call sub('max', y, x, max(y, x))
+  call sub('max', y, y, max(y, y))
   call sub('min', x, x, min(x, x))
   call sub('min', x, y, min(x, y))
   call sub('min', y, x, min(y, x))
+  call sub('min', y, y, min(y, y))
  contains
   subroutine sub(a, x, y, z)
     character(3), intent(in) :: a

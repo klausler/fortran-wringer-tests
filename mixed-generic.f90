@@ -1,7 +1,4 @@
 ! Can functions and subroutines both appear in a generic interface?
-! GNU, XLF: no
-! Intel, f18: yes, with a warning
-! NVF, NAG: yes
 module m1
   interface generic
     module procedure func

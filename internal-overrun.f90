@@ -1,7 +1,4 @@
 ! What happens when internal output overruns the array?
-! GNU: no jump to ERR=; IOSTAT=-1, IOMSG='End of file'
-! Intel, NAG, XLF, f18: jump to ERR=; IOSTAT > 0, IOMSG informative
-! NVF: same, but IOMSG padded with zeros instead of blanks
 character(20) arr(3)
 integer iostat
 character(80) iomsg

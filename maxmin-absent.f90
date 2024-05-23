@@ -1,10 +1,6 @@
 ! When an optional argument to MAX/MIN needs data conversion -- a common
 ! extension to the language -- what happens if the actual argument
 ! is not present?
-! GNU, Intel, NVF: runtime crash
-! NAG, XLF: data conversion not supported
-! f18: compile-time error if converted argument might be absent
-
 module m
  contains
   subroutine s(a,p,o)

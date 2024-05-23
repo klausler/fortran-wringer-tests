@@ -1,9 +1,6 @@
 ! The standard (F'23 13.10.4) is pretty clear about when list-directed
 ! output should not emit a blank to separate output items, including
 ! this case of defined output.
-! GNU, XLF: "a b"
-! Intel, NAG, f18: "ab"
-! NVF: "a" and "b" on two lines
 module m
   type t
     character a

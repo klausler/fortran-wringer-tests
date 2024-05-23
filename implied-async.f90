@@ -1,8 +1,5 @@
 ! Are errors with ASYNCHRONOUS also caught when the attribute is
 ! implied by usage rather than explicitly declared?
-! GNU: 3 out of 4 cases
-! f18, XLF: yes (4/4)
-! Intel, NVF, NAG: no
 module m
  contains
   subroutine s1(x)

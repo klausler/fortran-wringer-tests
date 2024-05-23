@@ -1,9 +1,4 @@
 ! Are function results finalized, at least in I/O statements?
-! GNU: no
-! Intel: only the last element (5)
-! NVF: yes, but values are wrong
-! NAG, f18: yes
-! XLF: runtime "I/O recursion detected"
 module m
   type t
     integer n

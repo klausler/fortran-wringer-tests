@@ -1,9 +1,4 @@
 ! Can a procedure pointer dummy argument be assumed-length?
-! GNU, IFX: yes
-! f18: yes, with portability warning
-! ifort: compiler crash ("feature not yet supported")
-! NAG: compiler crash ("Not a Uindex")
-! XLF: no error, blank runtime output
 module m
  contains
   subroutine subr(p)

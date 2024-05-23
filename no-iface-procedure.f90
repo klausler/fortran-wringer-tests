@@ -1,5 +1,3 @@
-! GNU, Intel, f18: works
-! NVF, NAG, XLF: various errors
 module m
  contains
   subroutine test

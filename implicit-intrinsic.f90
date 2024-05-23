@@ -2,8 +2,6 @@
 ! statement in a module's specification part, but is referenced in
 ! a declaration or initialization, is it still considered to be part
 ! of the module to be USE-associated into other scopes?
-! GNU, NVF, f18: no
-! Intel, NAG, XLF: yes
 module explicit
   intrinsic cos
 end

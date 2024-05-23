@@ -1,10 +1,5 @@
 ! What happens when an advancing input record lacks sufficient characters
 ! under PAD='NO'?
-! GNU: no errors; END= on cases 2 and 4 (zero-length internal, nonempty format)
-! Intel: END= on cases 1-4, errors on cases 6-8
-! NVF: no END= or error on any case
-! NAG: error on cases 6 and 8; no END= cases
-! XLF, f18: error on cases 2, 4, 6, 7, 8; no END= cases
 
   character(len=0) :: str0(2)
   character(len=2) :: str2(2)

@@ -1,8 +1,4 @@
 ! Finalization of function results
-! GNU: none
-! NVF: once
-! Intel, NAG, f18: twice
-! XLF: thrice
 module m
   type t
     integer component

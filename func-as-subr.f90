@@ -1,9 +1,4 @@
 ! Using a subroutine pointer as function result
-! NVF: works, prints "in bar" twice
-! GNU, Intel: compiler crash
-! NAG: bogus compilation error on "call foo" ("duplicate subprogram name FOO")
-! XLF: bogus compilation error on "call foo" ("foo was defined... as a function")
-! f18: no error, procedure pointer function result NYI in code gen
 module m
  contains
   recursive function foo()

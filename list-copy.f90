@@ -1,6 +1,4 @@
 ! Can the 'next' of a linked list be ALLOCATABLE?
-! GNU, Intel, f18: works, "1 2 3"
-! NVF, NAG, XLF: compilation errors about recursive type use without POINTER
 type :: t
   integer :: n
   type(t), allocatable :: next

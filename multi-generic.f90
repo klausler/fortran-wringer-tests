@@ -1,7 +1,5 @@
 ! What happens when two derived types have type-bound defined assignments
 ! defined on the LHS and RHS come into conflict?
-! GNU, NVF, XLF, f18: error
-! Intel, NVF: LHS wins
 module m
   type t1
     integer n

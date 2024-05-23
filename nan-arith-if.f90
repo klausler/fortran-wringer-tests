@@ -1,7 +1,4 @@
 ! How does an arithmetic IF statement interpret a NaN?
-! GNU, ifx, NVF, XLF: >0
-! ifort, f18: =0
-! NAG: runtine FP error
 subroutine aif(x)
   real :: x
   print *, "here goes"

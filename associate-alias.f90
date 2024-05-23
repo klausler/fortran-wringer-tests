@@ -1,6 +1,4 @@
 ! Are ASSOCIATE entities assumed to not alias?
-! Intel, NVF, NAG, XLF, f18: no such assumption
-! GNU: assumed no aliasing
 module m
  contains
   subroutine copy(to,from)

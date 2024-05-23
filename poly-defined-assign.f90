@@ -1,10 +1,4 @@
 ! Can defined assignment apply to an unlimited polymorphic left-hand side?
-! GNU, XLF: yes, prints 1
-! Intel: no, prints 0
-! NVF: runtime sigsegv
-! NAG: compile-time "LHS of intrinsic assignment is polymorphic"
-! f18: poly-defined-assign.f90:3:22: error: Defined assignment subroutine 'assign' conflicts with intrinsic assignment
-!      poly-defined-assign.f90:21:5: error: Left-hand side of assignment may not be polymorphic unless assignment is to an entire allocatable
 module m
   interface assignment(=)
     module procedure assign

@@ -1,7 +1,4 @@
 ! How are NaN values handled by MAXVAL, MINVAL, MAXLOC, & MINLOC?
-! Results are all over the map, with no good precedent.
-! Some compilers differ between folded and computed results.
-
 real, parameter :: nan = real(z'FFFFFFFF')
 real, parameter :: allNans_c(*) = [nan, nan]
 real, parameter :: someNans_c(*) = [nan, 0., nan]

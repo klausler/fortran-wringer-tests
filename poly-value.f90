@@ -1,6 +1,4 @@
 ! Can a VALUE dummy argument be polymorphic?
-! GNU, Intel: yes
-! NVF, NAG, XLF: no
 module m
   type t
   end type

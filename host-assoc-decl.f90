@@ -1,8 +1,4 @@
 ! Is implicitly typed "m" host associated or not?
-! GNU, NVF, NAG: "3 should be 3"
-! ifort, XLF: "2 should be 3"
-! ifx: "0 should be 3"
-! f18: Implicitly typed local entity 'm' not allowed in specification expression
 module module
  contains
   subroutine host(j)

@@ -1,7 +1,4 @@
 ! Can a reference to a pointer function be used as a variable?
-! GNU: yes
-! f18: yes, but codegen NYI
-! Intel, NAG, NVF, XLF: no, parsed as statement function definition
 module m
  contains
   function toPtr(x)

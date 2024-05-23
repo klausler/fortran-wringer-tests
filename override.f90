@@ -1,7 +1,4 @@
 ! Ensure that inaccessible TBPs are not overridden.
-! NAG, Intel, f18: correct
-! GNU, XLF: all overridden
-! NVF: compiler crash
 module ma
   type a
    contains

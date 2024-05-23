@@ -1,8 +1,4 @@
 ! When is INTENT(OUT) finalized?
-! GNU: final 1, out 0, after 3
-! Intel, NAG, XLF: final 1, out 2, after 3
-! NVF: out 0, after 3
-! f18: final 1, out 2, after 3, final 3
 module m1
   type :: t1
     integer :: n

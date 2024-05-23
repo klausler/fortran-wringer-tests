@@ -1,10 +1,5 @@
 ! 17.4 requires that the IEEE rounding mode be restored at the end of a
 ! subprogram that modifies them.  Does this occur?  If so, when?
-! GNU: Doesn't restore rounding mode; doesn't finalize function results or 'x', only 'tmp'
-! Intel: Doesn't restore rounding mode
-! NVF: Bogus compilation error on call to test(2) but not test(1)
-! NAG, XLF: Restores rounding mode before finalizing function result; it's TO_ZERO only for 'tmp'
-
 module m
   use, intrinsic :: ieee_arithmetic
   type t

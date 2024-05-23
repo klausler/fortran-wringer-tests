@@ -1,10 +1,6 @@
 ! When delimited list-directed character output has to be split across
 ! multiple records, and the last character is a quote mark that has to
 ! be doubled, it's impossible.
-! GNU, NVF: runtime "end of record" error
-! Intel:      > """""""""<, >(nulls)   <, >(nulls)   <, >""""      <
-! NAG, f18:   > """""""""<, >""""""""""<, >"         <, >""""      <
-! XLF:        > """""""""<, >""""""""""<, >"""       <, >"""" """""<
 character(11) :: buffer(3)
 character(10) :: quotes = '""""""""""'
 character(10) :: check

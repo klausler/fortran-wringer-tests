@@ -1,8 +1,5 @@
 ! Does the component type resolve to the host's definition or is it
 ! a forward reference to the new definition?
-! GNU, Intel, NVF, f18: the host type
-! XLF: the new type
-! NAG: redeclaration error
 module m
   type t1
     integer n(1)

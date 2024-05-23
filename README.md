@@ -27,6 +27,118 @@ Please submit updated results, comments about standard conformance,
 and more weird Fortran usage tests as pull requests to this
 repository.
 
+## Results
+
+Rather than identifying the various compilers with their particular
+results for each test, I report here the number of distinct behaviors
+(modulo insignificant differences) exhibited by the compilers that
+I've tested.
+These behaviors are denoted like `2+1+1`: this example signifies that I
+observed three distinct behaviors for a test, and that two compiler
+behaved the same, and two others each had their own distinct behavior.
+(The first number usually counts the number of compilers that exhibit
+what I believe to be the correct behavior, but that is often unclear.)
+
+| test | observed behaviors | notes |
+| ---- | ------------------ | ----- |
+| acos-iface.f90 | 4+3 | |
+| allocatable-result.f90 | 2+4 | |
+| ambig-generic.f90 | 2+5 | |
+| ambiguous-generic.f90 | 5+2 | |
+| associate-alias.f90 | 6+1 | |
+| associated-null.f90 | 4+3 | |
+| assumed-ptr-dummy.f90 | 3+1+1+2 | 2 compilers crashed |
+| assumed-rank-null.f90 | 4+1+1+1 | |
+| bad-null-actual.f90 | 4+1+1+1 | 1 compiler crash |
+| bare-L.f90 | 6+1 | |
+| big-input.f90 | 3+2+1+1+1 | |
+| bindc-charlen.f90 | 3+3+1 | 1 compiler crash |
+| child-io-eor.f90 | 1+2+1+1+1+1 | |
+| combined-generic.f90 | 4+3 | |
+| comma-terminated-field.f90 | 4+3| |
+| common-spec.f90 | 5+2 | |
+| complex-ctor.f90 | 4+3 | |
+| complex-part.f90 | 5+1+1 | |
+| construct-names.f90 | 5+2 | |
+| data-in-block.f90 | 3+3+1 | |
+| doubled-operators.f | 1+4+2 | |
+| dummy-dio.f90 | 2+2+1+1+1 | |
+| fd-misinfo01.f90 | 7 | |
+| fd-misinfo02.f90 | 4+2+1 | |
+| final-array-2.f90 | 1+2+1+1+1+1 | 1 runtime crash |
+| final-array.f90 | 2+3+1+1 | 1 runtime crash |
+| final-out.f90 | 1+1+3+2 | |
+| final-spec.f90 | 3+1+1+1+1 | |
+| final-vs-io.f90 | 2+1+1+1+1+1 | |
+| func-as-subr.f90 | 1+2+1+1+1+1 | 2 compiler crashes |
+| func-as-var.f90 | 3+4 | |
+| func-result-len.f90 | 2+1+1+1+1+1 | |
+| func-type-redef.f90 | 4+3 | |
+| func-type-scope.f90 | 3+2+1+1 | |
+| host-assoc-decl.f90 | 1+3+3 | |
+| host-assoc-type.f90 | 4+1+2 | |
+| huge.f90 | 3+1+3 | |
+| implicit-intrinsic.f90 | 3+4 | |
+| implied-async.f90 | 2+1+4 | |
+| import-only-dio.f90 | 2+2+1+2 | |
+| impossible-output.f90 | 2+2+2+1 | |
+| include.f90 | 1+6 | |
+| infinite-chars.f90 | 3+1+3 | 3 compilers crash |
+| inquire-closed.f90 | 5+2 | |
+| inquire-dir.f90 | 6+1 | |
+| inquire-mid.f90 | 1+1+1+1+1+1+1 | |
+| inquire-position.f90 | 4+1+1+1 | 1 runtime crash |
+| internal-overrun.f90 | 5+1+1 | |
+| int-overflow-read.f90 | 4+1+1+1 | |
+| invisible-dio.f90 | 4+1+1+1 | |
+| kinds-decls.f90 | 5+2 | |
+| legacy-fmt.f90 | 5+1+1 | |
+| list-copy.f90 | 4+3 | |
+| list-directed-defined-output-spacing.f90 | 3+1+1+1 | |
+| logical.f90 | 4+2+1 | |
+| main-return.f90 | 4+3 | |
+| maxmin-absent.f90 | 5+2 | |
+| maxmin-nan.f90 | 1+1+1+1+1+1+1 | |
+| mixed-generic.f90 | 4+3 | |
+| modify-do.f90 | 3+3+1 | |
+| mod-name-conflict.f90 | 2+1+4 | |
+| modulo-huge-tiny.f90 | 3+2+1+1 | |
+| multi-generic.f90 | 4+2+1 | |
+| namelist-host-assoc.f90 | 3+2+2 | |
+| namelist-skip.f90 | 6+1 | |
+| namelist-tricky.f90 | 4+2+1 | |
+| nan-arith-if.f90 | 3+4+1 | |
+| nl-rename.f90 | 4+3 | |
+| no-iface-procedure.f90 | 4+3 | |
+| non-specific.f90 | 3+4 | |
+| null-alloc-actual.f90 | 3+2+2 | |
+| null-opd.f90 | 3+1+1+1+1 | 1 compiler crash |
+| optional-max.f90 | 1+1+2+1+1 | |
+| override.f90 | 3+3+1 | 1 compiler crash, 3 clearly wrong |
+| pad-no-short-record.f90 | 2+1+1+1+1+1 | 1 runtime crash |
+| poly-ac.f90 | 5+1+1+1 | |
+| poly-defined-assign.f90 | 2+2+1+1+1 | |
+| polymorphic-actual.f90 | 2+3+2 | |
+| poly-transfer.f90 | 3+4 | |
+| poly-value.f90 | 3+4 | |
+| private-kind.f90 | 4+2+1 | 1 compiler crash |
+| protected-ptr-lhs.f90 | 5+2 | |
+| ptr-comp-init.f90 | 3+1+2+1 | 1 compiler crash |
+| read-overflow.f90 | 4+3 | |
+| ref-in-decl.f90 | 2+2+3 | |
+| rounding-final.f90 | 1+2+1+2 | |
+| signed-zero-max-min.f90 | 2+1+2+1+1 | |
+| slice-init.f90 | 2+1+1+2+1| |
+| specifics.f90 | 4+2+1 | |
+| stmt-func-confusion.f90 | 2+1+1+3 | |
+| tiny-spacing.f90 | 2+1+4 | |
+| transfer-boz.f90 | 2+3+1+1 | |
+| tricky-finals.f90 | 1+1+3+1+1 | |
+| type.f90 | 5+2 | |
+| vect-subs-data.f90 | 4+1+1+1 | 1 compiler crash |
+| weird-common.f90 | 4+2+1 | |
+| where-realloc.f90 | 3+3+1 | 3 runtime crashes |
+
 ## Writing Portable Fortran
 
 As one can observe from how various Fortran compilers handle these
