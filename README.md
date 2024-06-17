@@ -42,7 +42,7 @@ what I believe to be the correct behavior, but that is often unclear.)
 | test | observed behaviors | notes |
 | ---- | ------------------ | ----- |
 | acos-iface.f90 | 4+3 | |
-| allocatable-result.f90 | 2+4 | |
+| allocatable-result.f90 | 2+5 | |
 | ambig-generic.f90 | 2+5 | |
 | ambiguous-generic.f90 | 5+2 | |
 | associate-alias.f90 | 6+1 | |
@@ -61,7 +61,7 @@ what I believe to be the correct behavior, but that is often unclear.)
 | complex-part.f90 | 5+1+1 | |
 | construct-names.f90 | 5+2 | |
 | data-in-block.f90 | 3+3+1 | |
-| doubled-operators.f | 1+4+2 | |
+| doubled-operators.f | 5+2 | |
 | dummy-dio.f90 | 2+2+1+1+1 | |
 | fd-misinfo01.f90 | 7 | |
 | fd-misinfo02.f90 | 4+2+1 | |
@@ -116,6 +116,7 @@ what I believe to be the correct behavior, but that is often unclear.)
 | optional-max.f90 | 1+1+2+1+1 | |
 | override.f90 | 3+3+1 | 1 compiler crash, 3 clearly wrong |
 | pad-no-short-record.f90 | 2+1+1+1+1+1 | 1 runtime crash |
+| parent-comp-name.f90 | 6+2 | |
 | poly-ac.f90 | 5+1+1+1 | |
 | poly-defined-assign.f90 | 2+2+1+1+1 | |
 | polymorphic-actual.f90 | 2+3+2 | |
