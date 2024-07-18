@@ -326,7 +326,7 @@ compiler developers don't always implement it correctly.
 
 ### Avoid compiler bugs with `NULL()`
 
-* Use `ASSOCIATED(p)` rather than `ASSOCIATED(p, NULL())`.
+* Use `ASSOCIATED(p)` rather than `.NOT. ASSOCIATED(p, NULL())`.
 * Use `NULLIFY(p)` rather than `p => NULL()`.
 * Avoid `NULL()` in structure constructors for allocatable and
   pointer components; use default component initialization for
