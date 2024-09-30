@@ -130,6 +130,7 @@ what I believe to be the correct behavior, but that is often unclear.)
 | rounding-final.f90 | 1+2+1+2 | |
 | signed-zero-max-min.f90 | 2+1+2+1+1 | |
 | slice-init.f90 | 2+1+1+2+1| |
+| spacing.f90 | 5+1+1 | |
 | specifics.f90 | 4+2+1 | |
 | stmt-func-confusion.f90 | 2+1+1+3 | |
 | tiny-spacing.f90 | 2+1+4 | |
