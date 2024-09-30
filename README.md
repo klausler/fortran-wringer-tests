@@ -114,6 +114,7 @@ what I believe to be the correct behavior, but that is often unclear.)
 | null-alloc-actual.f90 | 3+2+2 | |
 | null-opd.f90 | 3+1+1+1+1 | 1 compiler crash |
 | optional-max.f90 | 1+1+2+1+1 | |
+| opt-ptr.f90 | 2+5 | |
 | override.f90 | 3+3+1 | 1 compiler crash, 3 clearly wrong |
 | pad-no-short-record.f90 | 2+1+1+1+1+1 | 1 runtime crash |
 | parent-comp-name.f90 | 6+2 | |
