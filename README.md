@@ -123,6 +123,7 @@ what I believe to be the correct behavior, but that is often unclear.)
 | polymorphic-actual.f90 | 2+3+2 | |
 | poly-transfer.f90 | 3+4 | |
 | poly-value.f90 | 3+4 | |
+| print-namelist.f90 | 7+1 | |
 | private-kind.f90 | 4+2+1 | 1 compiler crash |
 | protected-ptr-lhs.f90 | 5+2 | |
 | ptr-comp-init.f90 | 3+1+2+1 | 1 compiler crash |
