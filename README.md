@@ -112,6 +112,7 @@ what I believe to be the correct behavior, but that is often unclear.)
 | no-iface-procedure.f90 | 4+3 | |
 | non-specific.f90 | 3+4 | |
 | null-alloc-actual.f90 | 3+2+2 | |
+| null-allocatable.f90 | 3+2+1 | |
 | null-opd.f90 | 3+1+1+1+1 | 1 compiler crash |
 | optional-max.f90 | 1+1+2+1+1 | |
 | opt-ptr.f90 | 2+5 | |
@@ -132,6 +133,7 @@ what I believe to be the correct behavior, but that is often unclear.)
 | rounding-final.f90 | 1+2+1+2 | |
 | signed-zero-max-min.f90 | 2+1+2+1+1 | |
 | slice-init.f90 | 2+1+1+2+1| |
+| source-mold-lbound.f90 | 4+2+1 | |
 | spacing.f90 | 5+1+1 | |
 | specifics.f90 | 4+2+1 | |
 | stmt-func-confusion.f90 | 2+1+1+3 | |
@@ -190,6 +192,9 @@ compiler developers don't always implement it correctly.
 * Don't assume that an allocatable function result is an allocatable
   after the function returns -- it's not, but some compilers allow
   you to associate it with an allocatable dummy argument.
+  Others treat the value of a function returning an array as having
+  non-default bounds, if it was allocatable and allocated with
+  non-default lower bounds.
 
 * If you reference an intrinsic function in a declaration in a module
   that doesn't have default `PRIVATE` accessibility, e.g. `x = cos(0.)`,
