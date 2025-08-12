@@ -61,6 +61,7 @@ what I believe to be the correct behavior, but that is often unclear.)
 | complex-part.f90 | 5+1+1 | |
 | construct-names.f90 | 5+2 | |
 | data-in-block.f90 | 3+3+1 | |
+| dealloc-in-defined-asst.f90 | 1+1+1+1+2 runtime crashes | |
 | doubled-operators.f | 5+2 | |
 | dummy-dio.f90 | 2+2+1+1+1 | |
 | fd-misinfo01.f90 | 7 | |
@@ -271,7 +272,7 @@ compiler developers don't always implement it correctly.
   the bindings that are used in the module.
   Only half of the compilers tested get this right, and the
   bug is very hard to figure out with the others, so it's
-  best to make the TBP `NON_OVERRIDEABLE` in the base type or
+  best to make the TBP `NON_OVERRIDABLE` in the base type or
   in the module's extensions of a private base type.
 * A `PROTECTED` pointer can't appear as the left-hand side of a
   pointer assignment statement outside its module.
