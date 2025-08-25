@@ -109,6 +109,7 @@ what I believe to be the correct behavior, but that is often unclear.)
 | namelist-skip.f90 | 6+1 | |
 | namelist-tricky.f90 | 4+2+1 | |
 | nan-arith-if.f90 | 3+4+1 | |
+| negation-in-exponent.f90 | 4+2+1 | |
 | nl-rename.f90 | 4+3 | |
 | no-iface-procedure.f90 | 4+3 | |
 | non-specific.f90 | 3+4 | |
@@ -306,6 +307,14 @@ compiler developers don't always implement it correctly.
 * A `COMMON` block name is allowed to be the same as other entities
   in the same scope, but doing so can raise a bogus error with
   many compilers.
+* Defined assignment is useful, and allocatable data components are
+  also useful.  But if you combine them, you can easily write code
+  that is nonportable or works in startling ways on some compilers.
+  Intrinsic assignment requires deallocation of all allocatable
+  subobjects on the left-hand side, whether there's defined assignments
+  defined for their containers or not.  When defining derived types
+  whose components use defined assignment, it's best to defined
+  assignment for their containers as well.
 
 ### IEEE arithmetic
 * `HUGE()` and `TINY()` are broken with IEEE floating-point, which
