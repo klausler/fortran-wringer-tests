@@ -62,6 +62,7 @@ what I believe to be the correct behavior, but that is often unclear.)
 | construct-names.f90 | 5+2 | |
 | data-in-block.f90 | 3+3+1 | |
 | dealloc-in-defined-asst.f90 | 1+1+1+1+2 runtime crashes | |
+| defined-io-null-value.f90 | 4+2+1 |
 | doubled-operators.f | 5+2 | |
 | dummy-dio.f90 | 2+2+1+1+1 | |
 | fd-misinfo01.f90 | 7 | |
