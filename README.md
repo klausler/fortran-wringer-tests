@@ -53,6 +53,7 @@ what I believe to be the correct behavior, but that is often unclear.)
 | bare-L.f90 | 6+1 | |
 | big-input.f90 | 3+2+1+1+1 | |
 | bindc-charlen.f90 | 3+3+1 | 1 compiler crash |
+| child-advance.f90 | 4+2+1 | |
 | child-io-eor.f90 | 1+2+1+1+1+1 | |
 | combined-generic.f90 | 4+3 | |
 | comma-terminated-field.f90 | 4+3| |
